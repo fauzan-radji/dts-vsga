@@ -37,12 +37,12 @@
 
 Merupakan website yang dibuat sebagai tugas akhir dari DTS VSGA 2024.
 
-[![Halaman Home](images/screenshots/home.png)][demo]
-[![Halaman Profile](images/screenshots/profile.png)][demo]
-[![Halaman Visi Misi](images/screenshots/visi-misi.png)][demo]
-[![Halaman Produk](images/screenshots/product.png)][demo]
-[![Halaman Kontak](images/screenshots/contact.png)][demo]
-[![Halaman Tentang](images/screenshots/about.png)][demo]
+[![Halaman Home](https://github.com/fauzan-radji/dts-vsga/raw/main/images/screenshots/home.png)][demo]
+[![Halaman Profile](https://github.com/fauzan-radji/dts-vsga/raw/main/images/screenshots/profile.png)][demo]
+[![Halaman Visi Misi](https://github.com/fauzan-radji/dts-vsga/raw/main/images/screenshots/visi-misi.png)][demo]
+[![Halaman Produk](https://github.com/fauzan-radji/dts-vsga/raw/main/images/screenshots/product.png)][demo]
+[![Halaman Kontak](https://github.com/fauzan-radji/dts-vsga/raw/main/images/screenshots/contact.png)][demo]
+[![Halaman Tentang](https://github.com/fauzan-radji/dts-vsga/raw/main/images/screenshots/about.png)][demo]
 
 <p align="right">(<a href="#readme-top">Kembali ke atas 🔝</a>)</p>
 
