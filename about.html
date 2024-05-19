@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Motorcycle Club Indonesia</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css" />
+    <script src="./js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="./css/timeline.css" />
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/jpeg" />
+
+    <style>
+      html {
+        scroll-padding: 10rem;
+      }
+
+      .feature-icon-small {
+        width: 3rem;
+        height: 3rem;
+      }
+
+      .feature-icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 0.75rem;
+      }
+
+      .marketing .col-lg-3 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="display: flex; padding-top: 7.6rem; height: 100vh">
+    <nav
+      id="main-navigation"
+      class="navbar navbar-expand-lg bg-body-tertiary fixed-top flex-column shadow"
+      style="gap: 1rem"
+    >
+      <div class="container">
+        <div class="row w-100">
+          <div
+            class="col d-flex align-items-center justify-content-center"
+            style="gap: 1rem"
+          >
+            <img
+              class="rounded-circle"
+              src="./images/logo.jpg"
+              alt="MCI Logo"
+              style="width: 50px; aspect-ratio: 1/1; object-fit: cover"
+            />
+            <h3 class="text-center" style="width: fit-content">
+              Motorcycle Club Indonesia
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="container justify-content-center">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav text-center">
+            <a class="nav-link" href="index.html#home">Home</a>
+            <a class="nav-link" href="index.html#profile">Profile</a>
+            <a class="nav-link" href="index.html#visi-misi">Visi Misi</a>
+            <a class="nav-link" href="index.html#product">Produk</a>
+            <a class="nav-link" href="index.html#contact">Kontak</a>
+            <a class="nav-link active" aria-current="page" href="about.html"
+              >About Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <aside
+      class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary h-100"
+      style="width: 300px"
+    >
+      <ul id="side-navigation" class="nav nav-pills flex-column mb-auto">
+        <li>
+          <a href="#article" class="nav-link link-body-emphasis">
+            <i
+              class="bi bi-newspaper pe-none me-2"
+              style="width: 1em; height: 1em"
+            ></i>
+            Artikel
+          </a>
+        </li>
+        <li>
+          <a href="#event" class="nav-link link-body-emphasis">
+            <i
+              class="bi bi-calendar-event pe-none me-2"
+              style="width: 1em; height: 1em"
+            ></i>
+            Event
+          </a>
+        </li>
+        <li>
+          <a href="#galery" class="nav-link link-body-emphasis">
+            <i
+              class="bi bi-images pe-none me-2"
+              style="width: 1em; height: 1em"
+            ></i>
+            Galeri
+          </a>
+        </li>
+        <li>
+          <a href="#client" class="nav-link link-body-emphasis">
+            <i
+              class="bi bi-people pe-none me-2"
+              style="width: 1em; height: 1em"
+            ></i>
+            Klien Kami
+          </a>
+        </li>
+        <li>
+          <button
+            class="nav-link link-body-emphasis collapsed"
+            data-bs-toggle="collapse"
+            data-bs-target="#dashboard-collapse"
+          >
+            <i
+              class="bi bi-person pe-none me-2"
+              style="width: 1em; height: 1em"
+            ></i>
+            Akun
+          </button>
+
+          <div class="collapse show" id="dashboard-collapse">
+            <ul class="list-unstyled btn-toggle-nav ps-4">
+              <li>
+                <a
+                  href="#"
+                  class="nav-link link-body-emphasis"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login-modal"
+                >
+                  <i
+                    class="bi bi-box-arrow-in-right pe-none me-2"
+                    style="width: 1em; height: 1em"
+                  ></i>
+                  Login
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link link-body-emphasis"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signup-modal"
+                >
+                  <i
+                    class="bi bi-pencil pe-none me-2"
+                    style="width: 1em; height: 1em"
+                  ></i>
+                  Daftar
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </aside>
+
+    <main
+      class="w-100"
+      style="overflow-y: auto; scroll-behavior: smooth"
+      data-bs-spy="scroll"
+      data-bs-target="#side-navigation"
+    >
+      <div class="container py-5" id="article">
+        <div
+          class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary"
+        >
+          <div class="col-lg-6 px-0">
+            <h1 class="display-4 fst-italic">
+              Tips Berkendara Aman di Jalan Raya
+            </h1>
+            <p
+              class="lead my-3"
+              style="
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+              "
+            >
+              Menjadi seorang pengendara baik pengendara Motor dan Juga Mobil di
+              Jalan Raya harus mempunyai Peraturan dan Juga sikap yang disiplin,
+              memang benar semua pengendara Ingin perjalanan yang nyaman, cepat
+              dan Juga mudah, namun juga perlu anda sadari bahwa jalanan bukan
+              Milik Pribadi, banyak pasang mata yang juga menggunakan jalan
+              sebagai jalur tujuan mereka.
+            </p>
+            <p class="lead mb-0">
+              <a
+                href="https://dishub.tanjungpinangkota.go.id/berita/10-tips-berkendara-yang-aman-di-jalan-raya.html"
+                class="text-body-emphasis fw-bold"
+                >Lanjutkan membaca...</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis"
+                  >Tips &amp; Trik</strong
+                >
+                <h3 class="mb-0">
+                  Cara Merawat Mesin Motor Agar Tetap Halus: Rutin Ganti Oli!
+                </h3>
+                <div class="mb-1 text-body-secondary">25 Maret</div>
+                <p
+                  class="card-text mb-auto"
+                  style="
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  "
+                >
+                  Dalam penggunaannya, merawat mesin motor secara teratur
+                  merupakan sebuah keharusan untuk memastikan bahwa kendaraan
+                  bermotor tetap berkinerja optimal dan memiliki umur pakai yang
+                  panjang.
+                </p>
+                <a
+                  href="https://dishub.tanjungpinangkota.go.id/berita/10-tips-berkendara-yang-aman-di-jalan-raya.html"
+                  target="_blank"
+                  class="icon-link gap-1 icon-link-hover stretched-link"
+                >
+                  Lanjutkan membaca
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  src="https://dishub.tanjungpinangkota.go.id/storage/images/2023-11-29/D5eL7fDyP3g2OooPpYbFdTqS5ViBplHshRias6VQ_large.jpg"
+                  alt=""
+                  width="200"
+                  height="100%"
+                  style="object-fit: cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis"
+                  >Tips &amp; Trik</strong
+                >
+                <h3 class="mb-0">
+                  Tips Memilih Helm yang Tepat Untuk Keamanan Berkendara
+                </h3>
+                <div class="mb-1 text-body-secondary">25 Maret</div>
+                <p
+                  class="card-text mb-auto"
+                  style="
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  "
+                >
+                  Menggunakan helm saat mengendarai sepeda motor semestinya
+                  sudah menjadi kebiasaan. Jangan sampai penggunaan helm hanya
+                  ditunjukan kepada bapak polisi di pos kepolisian karena alasan
+                  takut kena tilang.
+                </p>
+                <a
+                  href="https://bintangmotor.com/tips-memilih-helm-yang-tepat-untuk-keamanan-berkendara/"
+                  target="_blank"
+                  class="icon-link gap-1 icon-link-hover stretched-link"
+                >
+                  Lanjutkan membaca
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  src="https://bintangmotor.com/wp-content/uploads/2023/01/Tips-Memilih-Helm-yang-Tepat-Untuk-Keamanan-Berkendara-1024x1024.webp"
+                  alt=""
+                  width="200"
+                  height="100%"
+                  style="object-fit: cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis"
+                  >Tips &amp; Trik</strong
+                >
+                <h3 class="mb-0">
+                  Waspada Cuaca Ekstrem, Begini agar Aman Berkendara
+                </h3>
+                <div class="mb-1 text-body-secondary">25 Maret</div>
+                <p
+                  class="card-text mb-auto"
+                  style="
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  "
+                >
+                  Halo sobat keren, memasuki penghujung tahun 2022 Badan
+                  Meteorologi, Klimatologi dan Geofisika (BMKG) memberikan
+                  peringatan dini terkait akan adanya cuaca ekstrim di Indonesia
+                  mulai dari tanggal 28 Desember 2022 hingga awal tahun 2023
+                  mendatang. Selain BMKG, peringatan cuaca ekstrim ini juga
+                  datang dari Badan Riset dan Inovasi Nasional (BRIN) yang
+                  mengatakan akan terjadi badai di Jabodetabek pada tanggal 28
+                  Desember 2022. Oleh karena itu, pemerintah menghimbau agar
+                  masyarakat untuk bersiap menghadapi cuaca ekstrim tersebut
+                  karena akan menimbulkan beberapa bencana alam seperti banjir,
+                  pohon tumbang dan longsor.
+                </p>
+                <a
+                  href="https://kreditkerenbanget.com/post/waspada-cuaca-ekstrem-begini-agar-aman-berkendara"
+                  target="_blank"
+                  class="icon-link gap-1 icon-link-hover stretched-link"
+                >
+                  Lanjutkan membaca
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  src="https://imgx.gridoto.com/crop/0x0:689x393/700x465/photo/gridoto/2017/11/28/2647921275.jpg"
+                  alt=""
+                  width="200"
+                  height="100%"
+                  style="object-fit: cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              style="height: 300px"
+            >
+              <div
+                class="col p-4 d-flex flex-column position-static h-100 justify-content-center"
+              >
+                <a
+                  href="#"
+                  target="_blank"
+                  class="icon-link gap-1 icon-link-hover stretched-link text-center justify-content-center fs-3"
+                >
+                  Lihat artikel lain
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-5" id="event">
+        <div class="page-content page-container" id="page-content">
+          <div class="padding">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-6">
+                <h2 class="text-left ps-5 pb-3 border-bottom">Event</h2>
+                <div class="timeline p-4 block mb-4">
+                  <div class="tl-item active">
+                    <div class="tl-dot b-warning"></div>
+                    <div class="tl-content">
+                      <div class="">Touring Tahunan ke Pulau Bali</div>
+                      <div class="tl-date text-muted mt-1">16 Mei 24</div>
+                    </div>
+                  </div>
+                  <div class="tl-item">
+                    <div class="tl-dot b-primary"></div>
+                    <div class="tl-content">
+                      <div class="">
+                        Seminar Keselamatan Berkendara di Jakarta
+                      </div>
+                      <div class="tl-date text-muted mt-1">1 Mei 24</div>
+                    </div>
+                  </div>
+                  <div class="tl-item">
+                    <div class="tl-dot b-danger"></div>
+                    <div class="tl-content">
+                      <div class="">Baksos: Donasi untuk Panti Asuhan</div>
+                      <div class="tl-date text-muted mt-1">17 Maret 24</div>
+                    </div>
+                  </div>
+                  <div class="tl-item">
+                    <div class="tl-dot b-danger"></div>
+                    <div class="tl-content">
+                      <div class="">Pelatihan Berkendara Aman di Surabaya</div>
+                      <div class="tl-date text-muted mt-1">14 Februari 24</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="container mb-5" />
+
+      <div class="container" id="galery">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center mb-3">Galeri</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                class="card-img-top card-img-bottom"
+                width="100%"
+                height="250px"
+                style="object-fit: cover"
+                src="https://images.unsplash.com/photo-1600497934937-2d02ebad5da3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmlkaW5nJTIwbW90b3JiaWtlfGVufDB8fDB8fHww"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                class="card-img-top card-img-bottom"
+                width="100%"
+                height="250px"
+                style="object-fit: cover"
+                src="https://images.unsplash.com/photo-1558981000-f294a6ed32b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJpZGluZyUyMG1vdG9yYmlrZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                class="card-img-top card-img-bottom"
+                width="100%"
+                height="250px"
+                style="object-fit: cover"
+                src="https://images.unsplash.com/photo-1504160820508-da86e9dc8a28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJpZGluZyUyMG1vdG9yYmlrZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                class="card-img-top card-img-bottom"
+                width="100%"
+                height="250px"
+                style="object-fit: cover"
+                src="https://images.unsplash.com/photo-1506424482693-1f123321fa53?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHJpZGluZyUyMG1vdG9yYmlrZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                class="card-img-top card-img-bottom"
+                width="100%"
+                height="250px"
+                style="object-fit: cover"
+                src="https://images.unsplash.com/photo-1504909595448-91378747b0cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHJpZGluZyUyMG1vdG9yYmlrZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                class="card-img-top card-img-bottom"
+                width="100%"
+                height="250px"
+                style="object-fit: cover"
+                src="https://images.unsplash.com/photo-1510176263513-f31c60b0528b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHJpZGluZyUyMG1vdG9yYmlrZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="container mb-5" />
+
+      <div class="container marketing" id="client">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center mb-5">Klien Kami</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              width="140"
+              height="140"
+              style="object-fit: cover; background-color: #fff"
+              src="https://w7.pngwing.com/pngs/284/663/png-transparent-yamaha-motor-company-yamaha-yzf-r1-yamaha-corporation-logo-motorcycle-suzuki-company-trademark-logo.png"
+              alt=""
+            />
+            <h4 class="fw-normal">Yamaha Indonesia</h4>
+          </div>
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              width="140"
+              height="140"
+              style="object-fit: cover; background-color: #fff"
+              src="https://i.pinimg.com/originals/a1/d3/e4/a1d3e43f50869f3e25d9d97b3aadae38.jpg"
+              alt=""
+            />
+            <h4 class="fw-normal">Astra Honda Motor</h4>
+          </div>
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              width="140"
+              height="140"
+              style="object-fit: cover; background-color: #fff"
+              src="https://i.pinimg.com/736x/c6/75/63/c675637185072c5a2dc1726bff892046.jpg"
+              alt=""
+            />
+            <h4 class="fw-normal">Pertamina</h4>
+          </div>
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              width="140"
+              height="140"
+              style="object-fit: cover; background-color: #fff"
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Lambang_Polda_Metro_Jaya.png"
+              alt=""
+            />
+            <h4 class="fw-normal">Polda Metro Jaya</h4>
+          </div>
+        </div>
+      </div>
+
+      <footer
+        class="d-flex container flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">
+          &copy; 2024 Motorcycle Club Indonesia
+        </p>
+
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <img
+            class="rounded-circle"
+            src="./images/logo.jpg"
+            width="40"
+            alt="MCI Logo"
+            style="aspect-ratio: 1/1"
+          />
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="index.html#home" class="nav-link px-2 text-body-secondary"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="index.html#profile"
+              class="nav-link px-2 text-body-secondary"
+              >Profile</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="index.html#visi-misi"
+              class="nav-link px-2 text-body-secondary"
+              >Visi Misi</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="index.html#product"
+              class="nav-link px-2 text-body-secondary"
+              >Produk</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="index.html#contact"
+              class="nav-link px-2 text-body-secondary"
+              >Kontak</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link px-2 text-body-secondary"
+              >Tentang Kami</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/fauzan-radji"
+              class="nav-link px-2 text-body-secondary"
+              >Github</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </main>
+
+    <div class="modal" tabindex="-1" id="login-modal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="./login.php" method="post">
+              <div class="mb-3">
+                <label for="login-email" class="form-label">Alamat Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="login-email"
+                  name="email"
+                  placeholder="Masukkan email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="login-password" class="form-label"
+                  >Kata Sandi</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="login-password"
+                  name="password"
+                  placeholder="Masukkan kata sandi"
+                  required
+                />
+              </div>
+
+              <div class="text-end">
+                <button type="submit" class="btn btn-primary">Masuk</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="signup-modal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Daftar</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="./signup.php" method="post">
+              <div class="mb-3">
+                <label for="signup-email" class="form-label"
+                  >Alamat Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="signup-email"
+                  name="email"
+                  placeholder="Masukkan email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="signup-password" class="form-label"
+                  >Kata Sandi</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="signup-password"
+                  name="password"
+                  placeholder="Masukkan kata sandi"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="confirm-password" class="form-label"
+                  >Konfirmasi Kata Sandi</label
+                >
+                <input
+                  type="confirm-password"
+                  class="form-control"
+                  id="confirm-password"
+                  name="confirm-password"
+                  placeholder="Konfirmasi kata sandi"
+                  required
+                />
+              </div>
+
+              <div class="text-end">
+                <button type="submit" class="btn btn-primary">Daftar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
